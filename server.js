@@ -14,6 +14,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/social-ap
   useUnifiedTopology: true
 });
 
+//require('./models').Thought.remove({}, () => {})
+
 // Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
